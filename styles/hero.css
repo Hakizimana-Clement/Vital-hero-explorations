@@ -1,0 +1,146 @@
+.section-hero {
+  margin-top: 3rem;
+}
+
+.hero-wrapper {
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+}
+.hero-text-box {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.hero-description {
+  display: block;
+  background: var(--clr-trans);
+  padding: 0.5rem 0.75rem;
+  border-radius: 11px;
+  margin-bottom: var(--space-two);
+  font-size: var(--size-base);
+}
+.hero-title {
+  font-size: var(--size-5xl);
+}
+.hero-paragraph,
+.hero-logo {
+  font-family: monospace;
+}
+
+.hero-paragraph {
+  font-size: var(--size-lg);
+  margin: 2rem 0;
+  color: #ffffffba;
+}
+.hero-btn {
+  padding: 1rem 5rem !important;
+  margin-bottom: 4rem;
+}
+/* image */
+.hero-img-box {
+  grid-column: 1 /-1;
+  justify-self: center;
+  margin-bottom: var(--space-nine);
+}
+/* logo */
+.hero-logo {
+  grid-column: 1 /-1;
+}
+.hero-log--text {
+  text-align: center;
+  font-size: var(--size-xl);
+  margin-bottom: 1.5rem;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* xs */
+@media (min-width: 475px) {
+  .hero-text-box {
+    width: 87%;
+    margin: 0 auto;
+  }
+  .hero-paragraph {
+    margin: 2rem 0 3rem;
+  }
+  .hero-description {
+    width: 75%;
+    margin: 0 auto 2rem;
+  }
+  .hero-paragraph {
+    width: 79%;
+    margin: 1.5rem auto 2rem;
+  }
+  .hero-log--text {
+    font-size: var(--size-2xl);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .hero-wrapper {
+    grid-template-columns: 60fr 40fr;
+  }
+  .hero-text-box {
+    grid-column: 1;
+  }
+  .hero-img-box {
+    grid-column: 2;
+    grid-row: 2/-2;
+  }
+  .hero-logo {
+    grid-column: 1;
+  }
+  .hero-text-box {
+    /* width: 100px;
+    margin: 0; */
+    text-align: left;
+  }
+  .hero-description,
+  .hero-paragraph {
+    width: 100%;
+  }
+
+  .hero-description {
+    margin: 2rem 0;
+  }
+  .hero-paragraph {
+    margin: 1rem 0 3rem;
+  }
+
+  .hero-btn {
+    padding: 0.4rem 2rem !important;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+
+  .hero-btn span {
+    letter-spacing: 1px;
+  }
+  .hero-log--text {
+    font-size: var(--size-base);
+    text-align: left;
+    padding-left: 2rem;
+  }
+}
+/* md */
+/* @media (min-width: 768px) {
+} */
+/* lg */
+@media (min-width: 1024px) {
+  html {
+    font-size: 88%;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */

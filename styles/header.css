@@ -1,0 +1,149 @@
+.header {
+  padding: 1rem;
+}
+.navbar-link:link,
+.navbar-link:visited {
+  font-size: var(--size-3xl);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: -2px;
+  color: var(--clr-font);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-list {
+  display: none;
+}
+.mobile-nav {
+  width: var(--size-5xl);
+  height: var(--size-5xl);
+  color: var(--clr-font);
+  display: block;
+}
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+/* md */
+@media (min-width: 768px) {
+  /* .header {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-list {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  } */
+
+  /* .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    gap: 3.2rem;
+  } */
+  .header {
+    /* padding: var(--space-seven) var(--space-ten); */
+    padding: 32px 0;
+    /* padding-left: 33px !important; */
+    /* padding-right: 33px !important; */
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: var(--size-4xl);
+  }
+
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-two);
+  }
+  .navbar-anchor:link,
+  .navbar-anchor:visited {
+    text-decoration: none;
+    color: var(--clr-font);
+    font-size: var(--size-xl);
+  }
+
+  .navbar-anchor:hover,
+  .navbar-anchor:active {
+    color: var(--clr-lighter);
+  }
+  /* button */
+
+  .btn--signIn {
+    background: none !important;
+    /* border: 1px solid; */
+    color: white !important;
+    box-shadow: inset 0 0 0 1px;
+  }
+
+  .btn--signIn:hover,
+  .btn--signIn:active {
+    background-color: var(--clr-font) !important;
+    color: var(--clr-dark) !important;
+  }
+
+  .btn--started {
+    display: flex !important;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .arrow-icon {
+    font-size: 1.2rem;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  /* increase font size */
+  html {
+    font-size: 85%;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  html {
+    font-size: 89%;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}

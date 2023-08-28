@@ -1,0 +1,96 @@
+/* 
+--- FONT SIZE SYSTEM (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+----- SPACING SYSTEM (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  /* color system */
+  --clr-background-one: rgb(16, 77, 59);
+  --clr-background-two: rgb(15, 55, 46);
+  --clr-font: #fff;
+  --clr-round: rgb(8, 33, 27);
+  --clr-lighter: #67f4af;
+  --clr-dark: #333;
+  --clr-trans: #062118d6;
+  /* --clr-hover:; */
+  /* sizes system */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+
+  /* spacing system  */
+  --space-two: 2rem;
+  --space-four: 4rem;
+  --space-three: 8rem;
+  --space-four: 1.2rem;
+  --space-five: 1.6rem;
+  --space-six: 2.4rem;
+  --space-seven: 3.2rem;
+  --space-eight: 4.8rem;
+  --space-nine: 6.4rem;
+  --space-ten: 8rem;
+  --space-eleven: 9.6rem;
+  --space-twelve: 12.8rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+body {
+  font-family: sans-serif;
+  color: var(--clr-font);
+
+  /* background-image: linear-gradient(to bottom right, #104d3b 100%, #0f372e 0); */
+  background-image: linear-gradient(to bottom right, #09372c 100%, #0f372e 0);
+
+  /* background-color: #000; */
+  /* background-image: linear-gradient(); */
+  /* background-image: linear-gradient(to right bottom, #eb984e, #e67e22); */
+}
+/* reset images and video */
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+/* reset all button */
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+a:link,
+a:visited {
+  color: var(--clr-font);
+}
