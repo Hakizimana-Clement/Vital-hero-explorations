@@ -22,7 +22,7 @@
     <!-- end -->
   </head>
   <body>
-    <header class="container header">
+    <header class="container header nav-open">
       <nav class="navbar">
         <div class="navbar-links">
           <a href="#" class="navbar-link">Vital</a>
@@ -51,17 +51,60 @@
                   ></ion-icon></button
               ></a>
             </li>
+            <li>
+              <ion-icon name="sunny-outline" class="icon-sun"></ion-icon>
+            </li>
           </ul>
         </div>
-        <ion-icon name="menu-outline" class="mobile-nav"></ion-icon>
+
+        <ion-icon name="menu-outline" class="mobile-nav open-navbar"></ion-icon>
       </nav>
     </header>
+    <!-- mobile navagtion -->
+    <div class="mobile-navbar">
+      <ul class="navbar-list--mobile">
+        <li><a class="navbar-anchor--mobile" href="#">Products</a></li>
+        <li><a class="navbar-anchor--mobile" href="#">Pricing</a></li>
+        <li><a class="navbar-anchor--mobile" href="#">Blog</a></li>
+        <li><a class="navbar-anchor--mobile" href="#">About</a></li>
+        <li><a class="navbar-anchor--mobile" href="#">Docs</a></li>
+        <li>
+          <a class="navbar-anchor--mobile" href="#"
+            ><button class="btn btn--signIn btn-signIn-mobile">
+              Sign in
+            </button></a
+          >
+        </li>
+        <li>
+          <a class="navbar-anchor--mobile" href="#"
+            ><button class="btn btn--started">
+              <span> Get started </span>
+              <ion-icon
+                name="chevron-forward-outline"
+                class="arrow-icon"
+              ></ion-icon></button
+          ></a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <ion-icon
+            name="sunny-outline"
+            class="icon-sun icon-sun-mobile"
+          ></ion-icon>
+        </li>
+      </ul>
+    </div>
+
+    <!-- end -->
+
     <main class="container section-hero">
       <div class="hero-wrapper grid">
         <div class="hero-text-box">
           <span class="hero-description">
             Product Updates: Try out our API with your free sleep analysis
+            <ion-icon name="resize-outline"></ion-icon>
           </span>
+
           <h1 class="hero-title">Fetch health & fitness data with one API</h1>
           <p class="hero-paragraph">
             Meet the Universal API for Wearables and Lab Data. The building
@@ -94,5 +137,6 @@
         </div>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

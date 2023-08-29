@@ -1,5 +1,6 @@
 .header {
   padding: 1rem;
+  position: relative;
 }
 .navbar-link:link,
 .navbar-link:visited {
@@ -24,6 +25,81 @@
   color: var(--clr-font);
   display: block;
 }
+.icon-sun {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+/* ******************************************* */
+/* mobile navigation */
+/* ******************************************* */
+
+/* .navbar-list--mobile { */
+.mobile-navbar {
+  display: none;
+  position: absolute;
+  /* display: flex; */
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-background-two);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* ********************* list ********************** */
+.navbar-list--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  /* color: white; */
+  list-style: none;
+}
+
+.mobile-nav__link-line {
+  border: 1px solid var(--clr-font);
+  padding-right: 1.5em;
+}
+
+/* ********************* link ********************** */
+.navbar-anchor--mobile:link,
+.navbar-anchor--mobile:visited {
+  /* color: black; */
+  text-decoration: none;
+  /* color: var(--clr-round); */
+  font-size: var(--size-2xl);
+}
+.navbar-anchor--mobile:hover,
+.navbar-anchor--mobile:active {
+  color: var(--clr-lighter);
+}
+
+.btn-signIn-mobile {
+  padding: 0.6rem 3rem !important;
+}
+/* state */
+.show-navbar {
+  display: block;
+}
+/* .navbar-list--mobile li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+} */
+/* icon */
+.icon-sun-mobile {
+  /* color: black; */
+}
+
+.openNavbar {
+  display: flex;
+}
+
 /* xs */
 @media (min-width: 475px) {
 }
@@ -107,14 +183,14 @@
   .btn--signIn {
     background: none !important;
     /* border: 1px solid; */
-    color: white !important;
+    color: var(--clr-font) !important;
     box-shadow: inset 0 0 0 1px;
   }
 
   .btn--signIn:hover,
   .btn--signIn:active {
     background-color: var(--clr-font) !important;
-    color: var(--clr-dark) !important;
+    color: var(--clr-span) !important;
   }
 
   .btn--started {
@@ -125,6 +201,7 @@
 
   .arrow-icon {
     font-size: 1.2rem;
+    color: var(--clr-span);
   }
   .mobile-nav {
     display: none;

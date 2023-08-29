@@ -8,13 +8,17 @@
 
 :root {
   /* color system */
-  --clr-background-one: rgb(16, 77, 59);
-  --clr-background-two: rgb(15, 55, 46);
+  --clr-background: linear-gradient(to bottom right, #09372c 100%, #0f372e 0);
+  /* --clr-background-two: rgb(15, 55, 46); */
   --clr-font: #fff;
   --clr-round: rgb(8, 33, 27);
   --clr-lighter: #67f4af;
   --clr-dark: #333;
-  --clr-trans: #062118d6;
+  --clr-transparent: #062118d6;
+  --clr-span: black;
+  --clr-hover-mbile-nav: #036536;
+  --clr-grey: #ffffffba;
+  /* --clr-arrow-icon:black */
   /* --clr-hover:; */
   /* sizes system */
   --size-xxs: 0.5rem;
@@ -41,11 +45,27 @@
   --space-five: 1.6rem;
   --space-six: 2.4rem;
   --space-seven: 3.2rem;
-  --space-eight: 4.8rem;
+  /* --space-eight: 4.8rem; */
   --space-nine: 6.4rem;
   --space-ten: 8rem;
   --space-eleven: 9.6rem;
   --space-twelve: 12.8rem;
+}
+/* dark mode system */
+.darkmode {
+  /* --clr-background: linear-gradient(to bottom right, #09372c 100%, #0f372e 0);
+  */
+  --clr-background-dark: "black";
+
+  /* --clr-background-two: rgb(211, 24, 211); */
+  --clr-font: #d3b300;
+  --clr-round: #d3b300;
+  --clr-lighter: #d3b300;
+  --clr-dark: #d3b300;
+  --clr-transparent: #201b00;
+
+  --clr-span: white;
+  --clr-grey: #d3b300;
 }
 
 * {
@@ -63,14 +83,14 @@ html {
 body {
   font-family: sans-serif;
   color: var(--clr-font);
-
-  /* background-image: linear-gradient(to bottom right, #104d3b 100%, #0f372e 0); */
   background-image: linear-gradient(to bottom right, #09372c 100%, #0f372e 0);
 
+  /* background-image: linear-gradient(to bottom right, #104d3b 100%, #0f372e 0); */
   /* background-color: #000; */
   /* background-image: linear-gradient(); */
   /* background-image: linear-gradient(to right bottom, #eb984e, #e67e22); */
 }
+
 /* reset images and video */
 img,
 picture,
